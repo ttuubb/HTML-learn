@@ -1,4 +1,5 @@
-import { Box, Flex, Heading, Button, useColorMode } from '@chakra-ui/react';
+import { Box, Flex, Heading, Button } from '@chakra-ui/react';
+import { useColorMode } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
