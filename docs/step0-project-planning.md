@@ -1,4 +1,4 @@
-# 步骤0：项目总体规划 [进度：80%]
+# 步骤0：项目总体规划 [进度：100%]
 
 ## 任务清单
 - [x] 1. 确定项目范围和目标
@@ -75,7 +75,26 @@
     * GitHub Actions工作流
     * 自动化测试
     * 自动化部署
-- [ ] 5. 设置开发环境
+- [x] 5. 设置开发环境
+  - 开发工具
+    * VS Code安装与配置
+    * Git安装与配置
+    * Node.js安装(v16+)
+    * Docker Desktop安装
+  - VS Code插件
+    * ESLint
+    * Prettier
+    * TypeScript
+    * Docker
+    * GitLens
+  - 环境变量配置
+    * Node.js环境变量
+    * Git环境变量
+    * Docker环境变量
+  - 开发工具配置
+    * Git全局配置
+    * NPM全局配置
+    * Docker配置
 
 ## 预计完成时间
 1周
