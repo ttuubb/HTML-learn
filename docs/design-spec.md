@@ -9,6 +9,15 @@
 - 学习进度记录（使用数据库）
 
 ### 1.2 技术栈
+- 前端框架：React + TypeScript
+- 状态管理：Redux Toolkit
+- UI组件库：Ant Design
+- 在线编辑器：Monaco Editor（VS Code的编辑器核心）
+- 后端框架：Node.js + Express/NestJS
+- API规范：GraphQL/REST
+- 数据库：MongoDB/MySQL
+- 部署：Docker + Kubernetes
+- 测试框架：Jest + React Testing Library
 - 后端框架：Flask/Django
 - 前端模板：Jinja2/Django Templates
 - 在线编辑器：CodeMirror/Ace Editor
@@ -82,28 +91,33 @@
 ## 4. 技术实现重点
 
 ### 4.1 代码执行环境
-- 服务器端Python解释器
-- 安全沙箱执行
+- Node.js运行时环境
+- Docker容器化隔离执行
+- WebAssembly支持（用于Python代码执行）
 - 资源限制与超时处理
 - 标准输出/错误捕获
 
 ### 4.2 性能优化
-- 数据库索引优化
-- 缓存策略
-- 异步任务处理
-- 静态资源优化
+- 前端代码分割和懒加载
+- 服务端渲染(SSR)或静态站点生成(SSG)
+- Redis缓存层
+- CDN加速
+- WebSocket实时通信
+- 微服务架构设计
 
 ### 4.3 数据存储
-- 关系型数据库存储
-  - 用户信息
-  - 学习进度
-  - 练习记录
-  - 笔记内容
-  - 代码片段
+- 数据库设计
+  - 用户集合/表
+  - 课程内容集合/表
+  - 学习进度集合/表
+  - 练习记录集合/表
+  - 代码片段集合/表
 
 ## 5. 后续扩展
+- PWA支持
 - 导出学习笔记
 - 自定义练习题
 - 移动端适配
-- RESTful API接口
-- 第三方登录集成
+- GraphQL/REST API接口
+- OAuth2.0第三方登录
+- WebAssembly优化

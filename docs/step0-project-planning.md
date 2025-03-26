@@ -1,116 +1,106 @@
-# Python Learning Website Project Planning
+# 步骤0：项目总体规划 [进度：80%]
 
-## Project Overview
+## 任务清单
+- [x] 1. 确定项目范围和目标
+  - 构建一个现代化的Python学习平台
+  - 目标用户：Python初学者和中级学习者
+  - 核心功能：
+    * 交互式课程学习
+    * 在线代码练习
+    * 进度追踪
+    * 即时反馈系统
+  - 技术目标：
+    * 高性能前端应用
+    * 安全的代码执行环境
+    * 可扩展的系统架构
+    * 良好的用户体验
+- [x] 2. 制定开发时间表
+  - 第1-2周：项目初始化与架构设置
+    * 环境配置
+    * 基础架构搭建
+    * 核心依赖安装
+  - 第3-5周：课程学习模块
+    * 课程内容管理
+    * 知识点展示
+    * 测验系统
+  - 第6-8周：代码练习模块
+    * 编辑器集成
+    * 练习题系统
+    * 代码评测
+  - 第9-10周：进度记录模块
+    * 用户系统
+    * 进度追踪
+    * 个人中心
+  - 第11-12周：部署与优化
+    * 性能优化
+    * 容器化部署
+    * 监控系统
+- [x] 3. 分配资源和人员
+  - 前端开发团队
+    * 1名高级前端工程师（React专家）
+    * 1名UI/UX设计师
+    * 1名初级前端工程师
+  - 后端开发团队
+    * 1名高级后端工程师（Node.js专家）
+    * 1名数据库工程师
+    * 1名DevOps工程师
+  - 硬件资源
+    * 开发服务器：2台
+    * 测试服务器：1台
+    * 生产服务器：2台（主备）
+  - 软件资源
+    * 开发工具许可
+    * 云服务资源
+    * 监控工具
+- [x] 4. 建立项目仓库
+  - 仓库结构
+    * /frontend - 前端项目目录
+    * /backend - 后端项目目录
+    * /docs - 文档目录
+    * /scripts - 工具脚本目录
+    * /deploy - 部署配置目录
+  - 版本控制
+    * Git分支策略：
+      - main: 生产环境分支
+      - develop: 开发主分支
+      - feature/*: 功能分支
+      - release/*: 发布分支
+      - hotfix/*: 紧急修复分支
+  - 代码规范
+    * ESLint配置
+    * Prettier配置
+    * TypeScript配置
+    * 提交信息规范
+  - CI/CD配置
+    * GitHub Actions工作流
+    * 自动化测试
+    * 自动化部署
+- [ ] 5. 设置开发环境
 
-According to the design proposal, we will develop a fully-functional Python learning website, including four core modules: course learning, code practice, online editor, and learning progress tracking. This document outlines the overall planning and implementation steps of the project.
+## 预计完成时间
+1周
 
-## Technology Stack Selection
+## 项目范围说明
+### 包含内容
+1. 用户系统
+   - 注册登录
+   - 个人档案
+   - 学习进度追踪
 
-After evaluation, we have chosen the following technology stack:
+2. 课程系统
+   - 基础Python教程
+   - 交互式示例
+   - 视频/文字教程
+   - 小测验
 
-- **Backend Framework**: Django (compared to Flask, Django provides a more complete feature set, including built-in admin panel, authentication system, etc.)
-- **Frontend Template**: Django Templates + Bootstrap 5 (responsive design)
-- **Online Editor**: CodeMirror (lightweight, easy to integrate)
-- **Database**: SQLite for development, PostgreSQL for production environment
-- **Deployment**: Nginx + Gunicorn
+3. 练习系统
+   - 在线代码编辑器
+   - 自动评分系统
+   - 多样化题库
+   - 即时运行结果
 
-## Project Completion Steps
-
-The project will be completed in the following 6 main steps:
-
-### Step 1: Project Initialization and Architecture Setup
-
-- Create Django project and applications
-- Configure basic settings (database, static files, etc.)
-- Design basic templates and styles
-- Implement user authentication system
-- Create basic navigation and homepage
-
-**Estimated Time**: 1 week
-
-### Step 2: Course Learning Module Implementation
-
-- Design course data models (categories, courses, chapters, etc.)
-- Implement course content management
-- Develop course browsing and learning interface
-- Implement quiz functionality
-- Integrate rich text editor
-
-**Estimated Time**: 2 weeks
-
-### Step 3: Code Practice Module Implementation
-
-- Design practice problem data models (difficulty, type, test cases, etc.)
-- Implement practice problem management system
-- Develop code submission and evaluation functionality
-- Implement practice problem browsing and filtering
-- Design test case system
-
-**Estimated Time**: 2 weeks
-
-### Step 4: Online Editor Module Implementation
-
-- Integrate CodeMirror editor
-- Implement code execution environment
-- Develop code formatting functionality
-- Implement code snippet saving functionality
-- Add syntax highlighting and error prompting
-
-**Estimated Time**: 1.5 weeks
-
-### Step 5: Learning Progress Tracking Module Implementation
-
-- Design user progress data models
-- Implement course learning progress tracking
-- Develop practice problem completion records
-- Implement notes and favorites functionality
-- Design user personal center
-
-**Estimated Time**: 1.5 weeks
-
-### Step 6: Project Deployment and Launch
-
-- Configure production environment database
-- Set up Nginx and Gunicorn
-- Implement static file optimization
-- Configure SSL certificate
-- Conduct performance testing and optimization
-- Write deployment documentation
-
-**Estimated Time**: 1 week
-
-## Project Timeline
-
-The overall project is expected to be completed in about 9 weeks, with the specific timeline as follows:
-
-1. **Week 1**: Complete project initialization and architecture setup
-2. **Weeks 2-3**: Complete course learning module
-3. **Weeks 4-5**: Complete code practice module
-4. **Weeks 6-7**: Complete online editor module
-5. **Weeks 7-8**: Complete learning progress tracking module
-6. **Week 9**: Complete project deployment and launch
-
-## Risk Assessment and Mitigation Strategies
-
-1. **Technical Risk**: Security of online code execution environment
-   - Mitigation: Implement strict sandbox environment and resource limitations
-
-2. **Schedule Risk**: Some modules may take more time than expected
-   - Mitigation: Set reasonable buffer time, adjust feature priorities if necessary
-
-3. **Integration Risk**: Issues may arise when integrating different modules
-   - Mitigation: Adopt incremental development and continuous integration methods to identify issues early
-
-## Future Extension Plans
-
-After completing the basic functionality, the following extensions can be considered:
-
-1. Implement learning notes export functionality
-2. Add custom practice problem functionality
-3. Develop mobile-adapted version
-4. Provide RESTful API interfaces
-5. Integrate third-party login
-
-## Conclusion
-
-This project plan provides a roadmap for implementing the Python learning website, clearly defining the tasks and time arrangements for each step. By following this plan, we will be able to complete the project development in an orderly manner and ultimately deliver a fully-functional, user-friendly Python learning platform.
+### 不包含内容
+1. 社区功能
+2. 付费课程
+3. 移动端应用（第一阶段）
+4. 直播教学
